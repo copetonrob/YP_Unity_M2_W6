@@ -12,9 +12,26 @@
 Теперь попробуем сделать правильное слежение камеры за объектом.
 
 видео-пример:
-<img src="https://github.com/copetonrob/YP_Unity_M2_W6/blob/main/img/T2_video1.gif" width="600"/>
+<img src="https://github.com/copetonrob/YP_Unity_M2_W6/blob/main/img/T2_video1.gif" width="800"/>
 
 ## Инструкция к выполнению
 
-подробная инструкция
-1.
+1. Создайте пустой объект, назовите его CameraHolder и поместите его в ту же точку, где находится наш персонаж-шар.
+
+<img src="https://github.com/copetonrob/YP_Unity_M2_W6/blob/main/img/T2_image1.png" width="800"/>
+
+2. Это будет объект наш объект постоянно преследующий нашего персонажа. Присоедините камеру к CameraHolder как дочерний объект в иерархии сцены. Настройте позицию и поворот камеры так, чтобы шар был примерно в центре экрана.
+
+<img src="https://github.com/copetonrob/YP_Unity_M2_W6/blob/main/img/T2_image2.png" width="800"/>
+
+3. Теперь, когда мы перемещаем CameraHolder вместе с ним перемещается и наша камера. Создайте скрипт Follower
+
+<img src="https://github.com/copetonrob/YP_Unity_M2_W6/blob/main/img/T2_image3.png" width="800"/>
+
+4. Добавьте компонент скрипта к объекту CameraHolder. Не забудьте указать ссылку на персонажа-шара в компоненте.
+
+<img src="https://github.com/copetonrob/YP_Unity_M2_W6/blob/main/img/T2_image4.png" width="800"/>
+
+5. Подумайте, как можно улучшить скрипт? Так, чтобы шар не был прибит словно гвоздями к центру экрана, а чтобы камера двигалась за шаром немного с опозданием. Может быть попробовать использовать Vector3.Lerp? Задание со звездочкой, на подумать.
+
+6. Почему мы использовали метод LateUpdate()? Попробуй заменить его на обычный Update() и понять в чем разница.
