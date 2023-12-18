@@ -11,7 +11,7 @@
 
 Теперь попробуем сделать правильное слежение камеры за объектом.
 
-<img src="https://github.com/copetonrob/YP_Unity_M2_W6/blob/main/img/T2_video1.gif" width="800"/>
+<img src="https://github.com/copetonrob/YP_Unity_M2_W6/blob/main/img/T2_video1.gif" width="600"/>
 
 ## Инструкция к выполнению
 
